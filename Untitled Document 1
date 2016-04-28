@@ -1,0 +1,15 @@
+am_libequalizer_plugin_la_OBJECTS = audio_filter/equalizer.lo \
+	visualization/visual/fft.lo visualization/visual/window.lo
+
+vlc/modules/Makefile
+
+example: 
+am_libegl_x11_plugin_la_rpath = -rpath \
+	$(voutdir)
+libequalizer_plugin_la_DEPENDENCIES = $(am__DEPENDENCIES_1)
+am_libequalizer_plugin_la_OBJECTS = audio_filter/equalizer.lo \
+	visualization/visual/fft.lo visualization/visual/window.lo
+libequalizer_plugin_la_OBJECTS = $(am_libequalizer_plugin_la_OBJECTS)
+liberase_plugin_la_LIBADD =
+am_liberase_plugin_la_OBJECTS = video_filter/erase.lo
+liberase_plugin_la_OBJECTS = $(am_liberase_plugin_la_OBJECTS)
